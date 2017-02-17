@@ -19,6 +19,8 @@
                 , array('string' => 'Se7en is a TV station', 'word' => 'se7en', 'count' => 1, 'reasoning' => "We'll allow words with numbers in them")
                 , array('string' => 'Omaha 44 44left Hut!', 'word' => '44', 'count' => 1, 'reasoning' => "We'll treat numbers similarly to letters")
                 , array('string' => 'Now listen to my story', 'word' => 'Jed', 'count' => 0, 'reasoning' => 'Verify word not found returns 0')
+                , array('string' => '', 'word' => 'Jed', 'count' => 0, 'reasoning' => 'Empty string will have no matches')
+                , array('string' => 'Now listen to my story', 'word' => '', 'count' => 0, 'reasoning' => 'Empty word will have no matches')
             );
 
             foreach ($expected_results as $expected_result) {
