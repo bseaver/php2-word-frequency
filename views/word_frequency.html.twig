@@ -8,7 +8,7 @@
 <body>
     <div class='container'>
         <h2>Word Frequency</h2>
-        <form action='/'>
+        <form action='/' method='post'>
 
             <div class='form-group'>
                 <label for='search_word'>Search Word</label>
@@ -17,6 +17,7 @@
                 class='form-control'
                 type='text'
                 placeholder='Example: The'
+                value='{{ search_word | default("") }}'
                 >
             </div>
 
@@ -28,10 +29,11 @@
                 id='string_to_search'
                 type='text'
                 placeholder='Example: Paris in the the spring'
+                value='{{ string_to_search | default("") }}'
                 >
             </div>
 
-            <button type='submit' class='btn-info'>Count Word Frequency</button>
+            <button type='submit' class='btn-primary'>Count Word Frequency</button>
 
             <br><br>
             <div class='form-group'>
@@ -41,6 +43,7 @@
                 class='form-control'
                 type='text'
                 placeholder='Example: 2'
+                value='{{ word_frequency | default("") }}'
                 readonly
                 >
             </div>
