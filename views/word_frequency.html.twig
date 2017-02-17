@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href='css/bootstrap.css' rel='stylesheet' type='text/css'>
+    <link href='css/styles.css' rel='stylesheet' type='text/css'>
+    <title>Word Frequency</title>
+</head>
+<body>
+    <div class='container'>
+        <h2>Word Frequency</h2>
+        <form action='/'>
+
+            <div class='form-group'>
+                <label for='search_word'>Search Word</label>
+                <input
+                name='search_word'
+                class='form-control'
+                type='text'
+                placeholder='Example: The'
+                >
+            </div>
+
+            <div class='form-group'>
+                <label for='string_to_search'>String to Search</label>
+                <input
+                name='string_to_search'
+                class='form-control'
+                id='string_to_search'
+                type='text'
+                placeholder='Example: Paris in the the spring'
+                >
+            </div>
+
+            <button type='submit' class='btn-info'>Count Word Frequency</button>
+
+            <br><br>
+            <div class='form-group'>
+                <label for='word_frequency'>Frequency of Word</label>
+                <input
+                name='word_frequency'
+                class='form-control'
+                type='text'
+                placeholder='Example: 2'
+                readonly
+                >
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
