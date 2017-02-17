@@ -64,6 +64,8 @@ Determine how frequently a word appears in a given string. Count full word match
    | Se7en is a TV station    | se7en         | 1     | We'll allow words with numbers in them     |
    | Omaha 44 44left Hut!     | 44            | 1     | We'll treat numbers similarly to letters   |
    | Now listen to my story   | Jed           | 0     | Verify word not found returns 0            |
+   |                          | Jed           | 0     | Empty string will have no matches          |
+   | Now listen to my story   |               | 0     | Empty word will have no matches            |
 
 4. Add Silex and Twig dependencies (composer.json, composer.lock)
 
