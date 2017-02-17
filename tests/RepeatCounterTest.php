@@ -12,6 +12,7 @@
             // _String_ to process, _Word_ to Count, _Count_, _Reasoning_ for Test
             $expected_results = array(
                 array('string' => 'start', 'word' => 'start', 'count' => 1, 'reasoning' => 'Most basic and will fail first')
+                , array('string' => 'Portland in the the fall', 'word' => 'the', 'count' => 2, 'reasoning' => 'Parse words on spaces')
             );
 
             foreach ($expected_results as $expected_result) {
