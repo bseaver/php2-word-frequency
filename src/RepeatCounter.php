@@ -22,7 +22,7 @@
             $string_to_search = join($string_to_search_characters, $empty_string);
 
             $search_word = strtoupper($search_word);
-            $string_to_search_words = explode(' ', strtoupper($string_to_search));
+            $string_to_search_words = explode($a_space, strtoupper($string_to_search));
 
             foreach ($string_to_search_words as $string_to_search_word) {
                 if ($search_word == $string_to_search_word) {
