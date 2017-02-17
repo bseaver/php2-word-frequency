@@ -17,6 +17,7 @@
                 , array('string' => 'What now what then', 'word' => 'What', 'count' => 2, 'reasoning' => 'Case does not matter')
                 , array('string' => 'A dog-Dog? $DOG!! D{o}G', 'word' => 'dog', 'count' => 3, 'reasoning' => 'Symbols other than a-z, 0-9 divide words')
                 , array('string' => 'Se7en is a TV station', 'word' => 'se7en', 'count' => 1, 'reasoning' => "We'll allow words with numbers in them")
+                , array('string' => 'Omaha 44 44left Hut!', 'word' => '44', 'count' => 1, 'reasoning' => "We'll treat numbers similarly to letters")
             );
 
             foreach ($expected_results as $expected_result) {
