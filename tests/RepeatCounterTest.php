@@ -14,6 +14,7 @@
                 array('string' => 'start', 'word' => 'start', 'count' => 1, 'reasoning' => 'Most basic and will fail first')
                 , array('string' => 'Portland in the the fall', 'word' => 'the', 'count' => 2, 'reasoning' => 'Parse words on spaces')
                 , array('string' => 'The dog doggerel lapdog', 'word' => 'dog', 'count' => 1, 'reasoning' => 'Only whole words match')
+                , array('string' => 'What now what then', 'word' => 'What', 'count' => 2, 'reasoning' => 'Case does not matter')
             );
 
             foreach ($expected_results as $expected_result) {
