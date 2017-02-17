@@ -15,6 +15,7 @@
                 , array('string' => 'Portland in the the fall', 'word' => 'the', 'count' => 2, 'reasoning' => 'Parse words on spaces')
                 , array('string' => 'The dog doggerel lapdog', 'word' => 'dog', 'count' => 1, 'reasoning' => 'Only whole words match')
                 , array('string' => 'What now what then', 'word' => 'What', 'count' => 2, 'reasoning' => 'Case does not matter')
+                , array('string' => 'A dog-Dog? $DOG!! D{o}G', 'word' => 'dog', 'count' => 3, 'reasoning' => 'Symbols other than a-z, 0-9 divide words')
             );
 
             foreach ($expected_results as $expected_result) {
