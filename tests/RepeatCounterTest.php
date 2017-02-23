@@ -21,6 +21,7 @@
                 , array('string' => 'Now listen to my story', 'word' => 'Jed', 'count' => 0, 'reasoning' => 'Verify word not found returns 0')
                 , array('string' => '', 'word' => 'Jed', 'count' => 0, 'reasoning' => 'Empty string will have no matches')
                 , array('string' => 'Now listen to my story', 'word' => '', 'count' => 0, 'reasoning' => 'Empty word will have no matches')
+                , array('string' => 'And did those feet ', 'word' => ' feet ', 'count' => 1, 'reasoning' => 'Make sure word to count is trimmed')
             );
 
             foreach ($expected_results as $expected_result) {
