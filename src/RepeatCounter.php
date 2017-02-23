@@ -21,7 +21,7 @@
             );
             $string_to_search = join($string_to_search_characters, $empty_string);
 
-            $search_word = strtoupper($search_word);
+            $search_word = strtoupper(trim($search_word));
             $string_to_search_words = explode($a_space, strtoupper($string_to_search));
 
             foreach ($string_to_search_words as $string_to_search_word) {
